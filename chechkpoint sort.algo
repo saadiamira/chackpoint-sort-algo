@@ -1,0 +1,27 @@
+PROCEDURE permut(a,b.INTEGER)
+VAR
+    temp:INTEGER
+    
+BEGIN
+    temp:=a;
+    a:=b;
+    b:=temp;
+    set_instructions
+END
+
+
+ALGORITHM sort
+
+VAR
+    tab:ARRY_OF INTEGER
+    i,j;INTEGER
+BEGIN
+    
+    FOR i FROM 0 TO tab.length-1   DO
+       j:=i;
+       WHILE (j>0 AND tab[j]<tab[j-1])DO
+           permut(tab[j],[j-1]);
+           J:=
+       END_WHILE
+    END_FOR
+END
